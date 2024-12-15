@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Contact.API.Infrastructure;
+using Contact.API.Models;
+using Contact.API.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Contact.API.Controllers
@@ -7,5 +10,17 @@ namespace Contact.API.Controllers
     [ApiController]
     public class ContactController : ControllerBase
     {
+        private readonly IContactService _contactService;
+        public ContactController(IContactService ContactService)
+        {
+            _contactService = ContactService;
+            
+        }
+
+        [HttpGet]
+        public ContactDTO Get(int Id) 
+        {
+            return _contactService.GetContactById(Id);
+        }
     }
 }
