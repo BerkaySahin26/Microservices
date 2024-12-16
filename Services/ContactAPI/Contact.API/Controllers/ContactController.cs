@@ -14,10 +14,10 @@ namespace Contact.API.Controllers
         public ContactController(IContactService ContactService)
         {
             _contactService = ContactService;
-            
+
         }
 
-        [HttpGet]
+        [HttpGet("{Id}")]
         public ContactDTO Get(int Id) 
         {
             return _contactService.GetContactById(Id);

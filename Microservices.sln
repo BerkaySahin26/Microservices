@@ -15,11 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContactAPI", "ContactAPI", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReservationAPI", "ReservationAPI", "{AEC19A9B-666C-4717-9A16-1A1329BF3B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.API.Infrastructure", "Services\ContactAPI\Contact.API.Infrastructure\Contact.API.Infrastructure.csproj", "{6A9262CB-9AA3-45A0-B3C7-4A811EF945FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.API.Infrastructure", "Services\ContactAPI\Contact.API.Infrastructure\Contact.API.Infrastructure.csproj", "{6A9262CB-9AA3-45A0-B3C7-4A811EF945FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.API.Models", "Services\ContactAPI\Contact.API.Models\Contact.API.Models.csproj", "{B4F22DC0-A91E-4E6F-A64A-E44C9B952CF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.API.Models", "Services\ContactAPI\Contact.API.Models\Contact.API.Models.csproj", "{B4F22DC0-A91E-4E6F-A64A-E44C9B952CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.API.Services", "Services\ContactAPI\Contact.API.Services\Contact.API.Services.csproj", "{1B88CCB2-25A4-4593-8AE4-1DB253E2DB04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.API.Services", "Services\ContactAPI\Contact.API.Services\Contact.API.Services.csproj", "{1B88CCB2-25A4-4593-8AE4-1DB253E2DB04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.API.Infrastructure", "Services\ResAPI\Reservation.API.Infrastructure\Reservation.API.Infrastructure.csproj", "{DEA30553-D457-4CCB-B854-0A9A7DEDD0F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.API.Models", "Services\ResAPI\Reservation.API.Models\Reservation.API.Models.csproj", "{6FCA6B82-A778-4730-B657-87C3E41C4060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.API.Services", "Reservation.API.Services\Reservation.API.Services.csproj", "{850E1113-FB96-44A3-826D-57F357C8723F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{1B88CCB2-25A4-4593-8AE4-1DB253E2DB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B88CCB2-25A4-4593-8AE4-1DB253E2DB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B88CCB2-25A4-4593-8AE4-1DB253E2DB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA30553-D457-4CCB-B854-0A9A7DEDD0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA30553-D457-4CCB-B854-0A9A7DEDD0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA30553-D457-4CCB-B854-0A9A7DEDD0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA30553-D457-4CCB-B854-0A9A7DEDD0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FCA6B82-A778-4730-B657-87C3E41C4060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCA6B82-A778-4730-B657-87C3E41C4060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCA6B82-A778-4730-B657-87C3E41C4060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCA6B82-A778-4730-B657-87C3E41C4060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850E1113-FB96-44A3-826D-57F357C8723F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850E1113-FB96-44A3-826D-57F357C8723F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850E1113-FB96-44A3-826D-57F357C8723F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850E1113-FB96-44A3-826D-57F357C8723F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,7 +80,10 @@ Global
 		{AEC19A9B-666C-4717-9A16-1A1329BF3B07} = {FBAA411B-4C63-4953-AC40-1332591053C1}
 		{6A9262CB-9AA3-45A0-B3C7-4A811EF945FB} = {B04509E8-AB9A-45EB-9410-A1204C3F9DA2}
 		{B4F22DC0-A91E-4E6F-A64A-E44C9B952CF1} = {B04509E8-AB9A-45EB-9410-A1204C3F9DA2}
-		{1B88CCB2-25A4-4593-8AE4-1DB253E2DB04} = {FBAA411B-4C63-4953-AC40-1332591053C1}
+		{1B88CCB2-25A4-4593-8AE4-1DB253E2DB04} = {B04509E8-AB9A-45EB-9410-A1204C3F9DA2}
+		{DEA30553-D457-4CCB-B854-0A9A7DEDD0F4} = {AEC19A9B-666C-4717-9A16-1A1329BF3B07}
+		{6FCA6B82-A778-4730-B657-87C3E41C4060} = {AEC19A9B-666C-4717-9A16-1A1329BF3B07}
+		{850E1113-FB96-44A3-826D-57F357C8723F} = {AEC19A9B-666C-4717-9A16-1A1329BF3B07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02CEF498-A17B-4A7A-A85B-50378280660C}
