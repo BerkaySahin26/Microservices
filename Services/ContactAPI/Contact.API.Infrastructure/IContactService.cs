@@ -10,5 +10,7 @@ namespace Contact.API.Infrastructure
     public interface IContactService
     {
         public ContactDTO GetContactById(int Id);
+
+        public ContactDTO GetContact();
     }
 }

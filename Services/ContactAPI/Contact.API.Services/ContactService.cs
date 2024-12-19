@@ -10,6 +10,16 @@ namespace Contact.API.Services
 {
     public class ContactService : IContactService
     {
+        public ContactDTO GetContact()
+        {
+            return new ContactDTO()
+            {
+                Id = Guid.NewGuid(),
+                FirstName = "Salih",
+                LastName = "Cantekin"
+            };
+        }
+
         public ContactDTO GetContactById(int Id)
         {
             return new ContactDTO()
