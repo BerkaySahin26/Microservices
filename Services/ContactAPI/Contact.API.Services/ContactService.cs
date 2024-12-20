@@ -14,9 +14,9 @@ namespace Contact.API.Services
         {
             return new ContactDTO()
             {
-                Id = Guid.NewGuid(),
-                FirstName = "Salih",
-                LastName = "Cantekin"
+                Id = 1,
+                FirstName = "Berkay",
+                LastName = "Şahin"
             };
         }
 
